@@ -1,8 +1,10 @@
 extern crate iron;
 #[macro_use] extern crate mime;
+extern crate router;
 
 use iron::prelude::*;
 use iron::status;
+use router::Router;
 
 fn main() {
     println!("Serving on http://localhost:3000...");
