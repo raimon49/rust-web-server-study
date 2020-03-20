@@ -7,6 +7,12 @@
 $ cargo run
 ```
 
+## Testing
+
+```bash
+$ cargo test
+```
+
 ## Environment
 
 * rustc 1.40.0 (73528e339 2019-12-16)
