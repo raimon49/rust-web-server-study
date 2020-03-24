@@ -1,6 +1,6 @@
 # rust-web-server-study
 
-## Run
+## Run server
 
 ```bash
 # access to localhost with 3000 port
