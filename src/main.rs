@@ -9,6 +9,12 @@ use router::Router;
 use std::str::FromStr;
 use urlencoded::UrlEncodedBody;
 
+// RustのモジュールはUnixのファイルシステムと似ている
+//
+// useキーワードはlnコマンドが作るリンクのようなエイリアス
+// selfとsuperキーワードは特殊ディレクトリ「.」「..」と似た概念
+// extern crateは外のふぁいるシステムをmountして使うのに近い概念
+
 fn main() {
     let mut router = Router::new();
 
@@ -16,7 +22,7 @@ fn main() {
     router.post("/gcd", post_gcd, "gcd");
 
     println!("Serving on http://localhost:3000...");
-    Iron::new(router).http("localhost:3000").unwrap();
+    Iron::new(router).http("192.168.56.102:3000").unwrap();
 }
 
 fn get_form(_request: &mut Request) -> IronResult<Response> {
