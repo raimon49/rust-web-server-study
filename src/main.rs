@@ -13,7 +13,7 @@ use urlencoded::UrlEncodedBody;
 //
 // useキーワードはlnコマンドが作るリンクのようなエイリアス
 // selfとsuperキーワードは特殊ディレクトリ「.」「..」と似た概念
-// extern crateは外のふぁいるシステムをmountして使うのに近い概念
+// extern crateは外のファイルシステムをmountして使うのに近い概念
 
 fn main() {
     let mut router = Router::new();
